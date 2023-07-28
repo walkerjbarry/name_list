@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\components",
+    "\\store",
+    "\\store\\slices",
+    "\\store\\thunks"
+  ],
+  "SelectedNode": "\\store\\slices\\usersSlice.js",
+  "PreviewInSolutionExplorer": false
+}
