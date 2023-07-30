@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\components",
+    "\\hooks",
     "\\store",
     "\\store\\slices",
     "\\store\\thunks"
   ],
-  "SelectedNode": "\\store\\slices\\usersSlice.js",
+  "SelectedNode": "\\components\\usersListItem.js",
   "PreviewInSolutionExplorer": false
 }

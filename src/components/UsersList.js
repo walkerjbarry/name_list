@@ -1,10 +1,13 @@
+import UsersListItem from './UsersListItem';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchUsers } from '../store';
 import { addUser } from '../store';
 import Button from './Button';
 import Skeleton from './Skeleton';
-import { useThunk} from '../hooks/use-thunk'
+import { useThunk } from '../hooks/use-thunk';
+
+
 
 
 function UsersList() {
@@ -23,34 +26,26 @@ function UsersList() {
         doCreateUser();  
     };
 
+    let content;
     if (isLoadingUsers) {
-        return <Skeleton times={6} className="h-10 w-full" />;
+        content = <Skeleton times={6} className="h-10 w-full" />;
     }
-    if (loadingUsersError) {
-        return <div>Error fetching data...</div>;
+    else if (loadingUsersError) {
+        content = <div>Error fetching data...</div>;
+    } else {
+        content = data.map((user) => {
+            return <UsersListItem key={user.id} user={user} />;      
+        });
     }
-    const renderedUsers = data.map((user) => {
-        return (
-            <div key={user.id} className="mb-2 border rounded">
-                <div className="flex p-2 justify-between items-center cursor-pointer">
-                    {user.name}
-                </div>
-            </div>
-        )
-    });
-
+ 
     return(
     <div>
-        <div className="flex flex-row justify-between m-3">
-                <h1 className="m-2 text-xl">Users</h1>
-                {
-                    isCreatingUser
-                        ? 'Creating User...'
-                        : <Button onClick={handleUserAdd}>+ Add User</Button>
-                }
-                {creatingUserError && 'Error Creating User'}
+        <div className="flex flex-row justify-between items-center m-3">
+            <h1 className="m-2 text-xl">Users</h1>
+                <Button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" loading={isCreatingUser} onClick={handleUserAdd}>+ Add User</Button>
+            {creatingUserError && 'Error Creating User'}
         </div>
-        {renderedUsers}
+        {content}
     </div>
 )}
 
