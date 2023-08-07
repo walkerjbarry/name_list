@@ -4,8 +4,10 @@
     "\\src",
     "\\src\\components",
     "\\src\\store",
-    "\\src\\store\\slices"
+    "\\src\\store\\apis",
+    "\\src\\store\\slices",
+    "\\src\\store\\thunks"
   ],
-  "SelectedNode": "\\src\\index.js",
+  "SelectedNode": "\\src\\components\\PhotosList.js",
   "PreviewInSolutionExplorer": false
 }

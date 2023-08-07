@@ -9,10 +9,121 @@
       "id": 5
     },
     {
-      "name": "Alicia Rodriguez",
-      "id": 12
+      "name": "Nicolas Shanahan",
+      "id": 6
+    },
+    {
+      "name": "Regina Harvey",
+      "id": 7
     }
   ],
-  "albums": [],
-  "photos": []
+  "albums": [
+    {
+      "userId": 1,
+      "title": "Generic Concrete Fish",
+      "id": 27
+    },
+    {
+      "userId": 7,
+      "title": "Awesome Bronze Pizza",
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "title": "Gorgeous Soft Towels",
+      "id": 29
+    },
+    {
+      "userId": 5,
+      "title": "Sleek Wooden Chips",
+      "id": 30
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8652562578276352",
+      "id": 3
+    },
+    {
+      "albumId": 30,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5947234745057280",
+      "id": 4
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5143643599929344",
+      "id": 7
+    },
+    {
+      "albumId": 29,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3454226946588672",
+      "id": 8
+    },
+    {
+      "albumId": 29,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7204144406331392",
+      "id": 9
+    },
+    {
+      "albumId": 29,
+      "url": "https://loremflickr.com/150/150/abstract?lock=6292856582963200",
+      "id": 10
+    },
+    {
+      "albumId": 29,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8368817895899136",
+      "id": 11
+    },
+    {
+      "albumId": 29,
+      "url": "https://loremflickr.com/150/150/abstract?lock=4920628165476352",
+      "id": 12
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1828536654495744",
+      "id": 13
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7871929341968384",
+      "id": 14
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5487892438712320",
+      "id": 15
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1585061533057024",
+      "id": 16
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8172833131724800",
+      "id": 17
+    },
+    {
+      "albumId": 27,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2631297319043072",
+      "id": 18
+    },
+    {
+      "albumId": 30,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3836660171145216",
+      "id": 19
+    },
+    {
+      "albumId": 30,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7037671306166272",
+      "id": 20
+    },
+    {
+      "albumId": 30,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1386707071008768",
+      "id": 21
+    }
+  ]
 }
